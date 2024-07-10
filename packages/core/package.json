@@ -1,6 +1,6 @@
 {
   "name": "@flow/core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Core utilities to build server applications with flow",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
