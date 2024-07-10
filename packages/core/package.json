@@ -1,7 +1,7 @@
 {
   "name": "@flow/core",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Core utilities to buiil server applications with flow",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -10,8 +10,15 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tristan Schwartz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TristanShz/flow"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@flow/typescript-config": "workspace:*",
     "@types/node": "^20.14.10",
