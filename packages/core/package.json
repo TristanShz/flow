@@ -2,15 +2,19 @@
   "name": "@flow/core",
   "version": "0.0.0",
   "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@flow/typescript-config": "workspace:*",
+    "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
 }
